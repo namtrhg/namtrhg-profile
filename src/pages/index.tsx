@@ -1,4 +1,3 @@
-import { isSSR } from '@dwarvesf/react-utils'
 import clsx from 'classnames'
 import { IconFacebook } from 'components/icons/components/IconFacebook'
 import { IconGithub } from 'components/icons/components/IconGithub'
@@ -7,15 +6,8 @@ import { IconTwitter } from 'components/icons/components/IconTwitter'
 import { SwitchButton } from 'components/SwitchButton'
 import { useState } from 'react'
 
-const DARK_MODE = 'darkMode'
-
 export const MainPage = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    if (isSSR()) {
-      return false
-    }
-    return Boolean(window.localStorage.getItem(DARK_MODE))
-  })
+  const [darkMode, setDarkMode] = useState(false)
 
   return (
     <section
@@ -77,16 +69,8 @@ export const MainPage = () => {
       <SwitchButton
         labelStyle={clsx('!mt-2', darkMode ? '!text-white' : '!text-black')}
         label="Dark Mode"
-        value={darkMode as boolean}
-        onChange={(value) => {
-          if (value) {
-            setDarkMode(true)
-            window.localStorage.setItem(DARK_MODE, '1')
-          } else {
-            setDarkMode(false)
-            window.localStorage.removeItem(DARK_MODE)
-          }
-        }}
+        value={darkMode}
+        onChange={() => setDarkMode(!darkMode)}
       />
       <p
         className={clsx(
