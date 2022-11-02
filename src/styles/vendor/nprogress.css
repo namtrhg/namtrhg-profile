@@ -6,7 +6,7 @@
 }
 
 #nprogress .bar {
-  @apply bg-pink-600;
+  @apply bg-[#40e0d0];
 
   position: fixed;
   z-index: 1031;

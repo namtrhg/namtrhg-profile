@@ -3,6 +3,7 @@ import { IconFacebook } from 'components/icons/components/IconFacebook'
 import { IconGithub } from 'components/icons/components/IconGithub'
 import { IconLinkedin } from 'components/icons/components/IconLinkedin'
 import { IconTwitter } from 'components/icons/components/IconTwitter'
+import { IconYoutube } from 'components/icons/components/IconYoutube'
 import { SwitchButton } from 'components/SwitchButton'
 import { useState } from 'react'
 
@@ -12,7 +13,7 @@ export const MainPage = () => {
   return (
     <section
       className={clsx(
-        'flex flex-col justify-center items-center space-y-6 h-screen text-center relative',
+        'flex flex-col justify-center items-center space-y-6 h-screen text-center px-4 relative',
         darkMode ? 'bg-black' : 'bg-[#f8f5fa]',
       )}
     >
@@ -39,6 +40,15 @@ export const MainPage = () => {
           />
         </a>
         <a
+          href="https://linkedin.com/in/namtrhg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <IconLinkedin
+            className={clsx('h-9 w-9', darkMode ? 'text-white' : 'text-black')}
+          />
+        </a>
+        <a
           href="https://www.facebook.com/nam.tranhoang.94651"
           target="_blank"
           rel="noreferrer"
@@ -57,23 +67,23 @@ export const MainPage = () => {
           />
         </a>
         <a
-          href="https://linkedin.com/in/namtrhg"
+          href="https://www.youtube.com/channel/UCXlQV_TdO07JIx5WiDZBYmA"
           target="_blank"
           rel="noreferrer"
         >
-          <IconLinkedin
+          <IconYoutube
             className={clsx('h-9 w-9', darkMode ? 'text-white' : 'text-black')}
           />
         </a>
       </div>
-      <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-20 text-sm">
+      <div className="flex justify-evenly space-x-10 lg:space-x-20 text-sm">
         <div
           className={clsx(
             'text-left space-y-2',
             darkMode ? 'text-white' : 'text-black',
           )}
         >
-          <p className="font-bold">Projects that I have worked</p>
+          <p className="font-bold">My projects</p>
           <ul className="list-disc text-left ml-5 space-y-2">
             <li>
               <a
@@ -83,8 +93,7 @@ export const MainPage = () => {
                 rel="noreferrer"
               >
                 Gravity
-              </a>{' '}
-              - Frontend Developer
+              </a>
             </li>
             <li>
               <a
@@ -94,8 +103,7 @@ export const MainPage = () => {
                 rel="noreferrer"
               >
                 Mstation
-              </a>{' '}
-              - Frontend Developer
+              </a>
             </li>
             <li>
               <a
@@ -105,8 +113,7 @@ export const MainPage = () => {
                 rel="noreferrer"
               >
                 Legend Fantasy War
-              </a>{' '}
-              - Frontend Developer
+              </a>
             </li>
             <li>
               <a
@@ -115,9 +122,8 @@ export const MainPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Newatlantic ERP Software
-              </a>{' '}
-              - Fullstack Developer
+                NAIT ERP Software
+              </a>
             </li>
           </ul>
         </div>
@@ -127,18 +133,18 @@ export const MainPage = () => {
             darkMode ? 'text-white' : 'text-black',
           )}
         >
-          <p className="font-bold">Technologies that I used</p>
+          <p className="font-bold">Technologies</p>
           <ul className="list-disc text-left ml-5 space-y-2">
-            <li>NextJS</li>
+            <li>ReactJS</li>
             <li>TailwindCSS</li>
-            <li>MySQL</li>
-            <li>SequelizeJS</li>
             <li>NodeJS</li>
+            <li>MySQL</li>
           </ul>
         </div>
       </div>
       <SwitchButton
-        labelStyle={clsx('!mt-2', darkMode ? '!text-white' : '!text-black')}
+        size="md"
+        labelStyle={clsx('!mt-1', darkMode ? '!text-white' : '!text-black')}
         label="Dark Mode"
         value={darkMode}
         onChange={() => setDarkMode(!darkMode)}
