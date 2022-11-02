@@ -13,7 +13,7 @@ export const MainPage = () => {
     <section
       className={clsx(
         'flex flex-col justify-center items-center space-y-6 h-screen text-center relative',
-        darkMode ? 'bg-black' : 'bg-white',
+        darkMode ? 'bg-black' : 'bg-[#f8f5fa]',
       )}
     >
       <h1
@@ -32,30 +32,38 @@ export const MainPage = () => {
       >
         Enthusiastic | Creative | Minimalist | Frontend developer 👨🏻‍💻
       </h2>
-      <div className="flex space-x-6">
+      <div className="flex items-center space-x-6">
         <a href="https://github.com/namtrhg" target="_blank" rel="noreferrer">
-          <IconGithub className={darkMode ? 'text-black' : 'text-white'} />
+          <IconGithub
+            className={clsx('h-9 w-9', darkMode ? 'text-white' : 'text-black')}
+          />
         </a>
         <a
           href="https://www.facebook.com/nam.tranhoang.94651"
           target="_blank"
           rel="noreferrer"
         >
-          <IconFacebook className={darkMode ? 'text-black' : 'text-white'} />
+          <IconFacebook
+            className={clsx('h-9 w-9', darkMode ? 'text-white' : 'text-black')}
+          />
         </a>
         <a
           href="https://twitter.com/NamTrnH84134954"
           target="_blank"
           rel="noreferrer"
         >
-          <IconTwitter className={darkMode ? 'text-black' : 'text-white'} />
+          <IconTwitter
+            className={clsx('h-9 w-9', darkMode ? 'text-white' : 'text-black')}
+          />
         </a>
         <a
           href="https://linkedin.com/in/namtrhg"
           target="_blank"
           rel="noreferrer"
         >
-          <IconLinkedin className={darkMode ? 'text-black' : 'text-white'} />
+          <IconLinkedin
+            className={clsx('h-9 w-9', darkMode ? 'text-white' : 'text-black')}
+          />
         </a>
       </div>
       <SwitchButton
