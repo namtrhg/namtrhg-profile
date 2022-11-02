@@ -24,7 +24,6 @@ export const MainPage = () => {
         darkMode ? 'bg-black' : 'bg-[#f8f5fa]',
       )}
     >
-      <p>{String(darkMode)}</p>
       <h1
         className={clsx(
           'text-7xl font-bold',
