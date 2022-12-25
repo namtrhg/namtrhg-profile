@@ -8,15 +8,18 @@ import { SwitchButton } from 'components/SwitchButton'
 import { useState } from 'react'
 
 export const MainPage = () => {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   return (
     <section
       className={clsx(
         'flex flex-col justify-center items-center space-y-6 h-screen text-center px-4 relative',
-        darkMode ? 'bg-black' : 'bg-[#f8f5fa]',
+        darkMode ? 'bg-black' : 'bg-white',
       )}
     >
+      <div className="h-40 w-40 overflow-hidden rounded-full">
+        <img src="/img/profile.png" alt="profile-img" />
+      </div>
       <h1
         className={clsx(
           'text-4xl lg:text-7xl font-bold',
