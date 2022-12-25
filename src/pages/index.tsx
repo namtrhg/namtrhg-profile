@@ -14,7 +14,7 @@ export const MainPage = () => {
   return (
     <section
       className={clsx(
-        'flex flex-col justify-center items-center space-y-6 h-screen text-center px-4 relative',
+        'flex flex-col justify-center items-center space-y-6 h-screen text-center px-4',
         darkMode ? 'bg-black' : 'bg-white',
       )}
     >
@@ -161,7 +161,7 @@ export const MainPage = () => {
       />
       <p
         className={clsx(
-          'absolute bottom-3 text-sm font-semibold',
+          'text-sm font-semibold',
           darkMode ? 'text-white' : 'text-black',
         )}
       >
