@@ -4,6 +4,7 @@ import { IconGithub } from 'components/icons/components/IconGithub'
 import { IconLinkedin } from 'components/icons/components/IconLinkedin'
 import { IconTwitter } from 'components/icons/components/IconTwitter'
 import { IconYoutube } from 'components/icons/components/IconYoutube'
+import { ImgWithFallback } from 'components/ImgWithFallback'
 import { SwitchButton } from 'components/SwitchButton'
 import { useState } from 'react'
 
@@ -18,7 +19,13 @@ export const MainPage = () => {
       )}
     >
       <div className="h-40 w-40 overflow-hidden rounded-full">
-        <img src="/img/profile.png" alt="profile-img" />
+        <ImgWithFallback
+          width={160}
+          height={160}
+          src="/img/profile.webp"
+          fallbackSrc="/img/profile.png"
+          alt="profile-img"
+        />
       </div>
       <h1
         className={clsx(
