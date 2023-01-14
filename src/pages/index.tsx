@@ -14,11 +14,11 @@ export const MainPage = () => {
   return (
     <section
       className={clsx(
-        'flex flex-col justify-center items-center space-y-6 h-screen text-center px-4',
+        'flex flex-col justify-center items-center space-y-3 lg:space-y-6 h-screen text-center px-4',
         darkMode ? 'bg-black' : 'bg-white',
       )}
     >
-      <div className="h-40 w-40 overflow-hidden rounded-full">
+      <div className="h-40 w-40 overflow-hidden rounded-full border-2 border-emerald-700">
         <ImgWithFallback
           width={160}
           height={160}
@@ -41,7 +41,7 @@ export const MainPage = () => {
           darkMode ? 'text-white' : 'text-black',
         )}
       >
-        Enthusiastic | Creative | Minimalist | Web Developer 👨🏻‍💻
+        Enthusiastic | Creative | Web Developer 👨🏻‍💻
       </h2>
       <div className="flex items-center space-x-6">
         <a href="https://github.com/namtrhg" target="_blank" rel="noreferrer">
@@ -167,7 +167,7 @@ export const MainPage = () => {
       >
         Contact me at{' '}
         <a
-          className="underline text-[#40e0d0]"
+          className="underline text-emerald-600"
           href="mailto:namtrhg@gmail.com"
           target="_blank"
           rel="noreferrer"

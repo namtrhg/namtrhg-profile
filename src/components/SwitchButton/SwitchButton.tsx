@@ -69,7 +69,9 @@ export function SwitchButton(props: SwitchButtonProps) {
         onChange={onChange}
         className={cx(
           'relative inline-flex items-center rounded-full border border-solid cursor-pointer',
-          value ? 'bg-[#40e0d0] border-primary' : 'bg-gray-600 border-gray-300',
+          value
+            ? 'bg-emerald-600 border-primary'
+            : 'bg-gray-600 border-gray-300',
           btnSize,
           className,
         )}
