@@ -16,7 +16,6 @@ const SignaturePage = () => {
   const [title, setTitle] = useState<string>('Nhân viên kinh doanh')
   const [titleEng, setTitleEng] = useState<string>('Salesman')
   const [phoneNumber, setphoneNumber] = useState<string>('91 8628 660')
-  const [website, setWebsite] = useState<string>('https://tranhoangnam.dev')
   const [facebook, setFacebook] = useState<string>('')
   const [youtube, setYoutube] = useState<string>('')
   const [linkedin, setLinkedin] = useState<string>('')
@@ -72,13 +71,6 @@ const SignaturePage = () => {
             </div>
           </div>
           <div className="mt-2 grid grid-cols-2 gap-2">
-            <div>
-              <Label>Website</Label>
-              <Input
-                value={website}
-                onChange={(e) => setWebsite(e.target.value)}
-              />
-            </div>
             <div>
               <Label>Facebook</Label>
               <Input
@@ -165,7 +157,7 @@ const SignaturePage = () => {
                         <td style={{ textAlign: 'right', width: '40px' }}>
                           <a
                             href="https://newatlantic.vn/"
-                            title="DWARVES Foundation"
+                            title="Newatlantic"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -218,7 +210,7 @@ const SignaturePage = () => {
                     </a>{' '}
                     | <b style={{ color: '#1E40AF' }}>W: </b>
                     <a
-                      href="https://dwarves.foundation"
+                      href="https://newatlantic.vn"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -393,7 +385,7 @@ const SignaturePage = () => {
                         <td style={{ textAlign: 'right', width: '40px' }}>
                           <a
                             href="https://newatlantic.vn/"
-                            title="DWARVES Foundation"
+                            title="Newatlantic"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -446,7 +438,7 @@ const SignaturePage = () => {
                     </a>{' '}
                     | <b style={{ color: '#1E40AF' }}>W: </b>
                     <a
-                      href="https://dwarves.foundation"
+                      href="https://newatlantic.vn"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
