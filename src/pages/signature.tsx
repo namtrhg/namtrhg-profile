@@ -8,7 +8,6 @@ import { IconYoutube } from 'components/icons/components/IconYoutube'
 import { toast } from 'components/Toast'
 import { Input } from 'components/Input'
 import { Label } from 'components/Label'
-import Image from 'next/image'
 
 const SignaturePage = () => {
   const [success, setSuccess] = useState<boolean>(false)
@@ -177,8 +176,8 @@ const SignaturePage = () => {
                               lineHeight: '1em',
                             }}
                           >
-                            <Image
-                              src="/img/logo.png"
+                            <img
+                              src="https://www.tranhoangnam.dev/img/logo.png"
                               alt="logo"
                               width={48}
                               height={48}
@@ -405,9 +404,10 @@ const SignaturePage = () => {
                             }}
                           >
                             <img
-                              src="/img/logo.png"
+                              src="https://www.tranhoangnam.dev/img/logo.png"
                               alt="logo"
-                              style={{ width: '48px' }}
+                              width={48}
+                              height={48}
                             />
                           </a>
                         </td>
