@@ -5228,6 +5228,11 @@ client-only@0.0.1:
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
+clipboard-polyfill@2.8.5:
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/clipboard-polyfill/-/clipboard-polyfill-2.8.5.tgz#9ffe905db5acdb0a90eb4df7bba943eddb9c9206"
+  integrity sha512-8j44/j2McDgEBYaVkCF/tZqcRXZ60X3sFf1zpOTH47CfcGZWKLqk0WLz031dbR0CHjHPZf40i0/H2H93jCBdVA==
+
 cliui@^7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"

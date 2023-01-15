@@ -114,7 +114,7 @@ storiesOf('components/Table', module).add('default', () => {
           render: () => (
             <a
               href="/"
-              className="text-pink-600 hover:text-pink-900 text-sm font-medium"
+              className="text-blue-600 hover:text-blue-900 text-sm font-medium"
             >
               Edit
             </a>

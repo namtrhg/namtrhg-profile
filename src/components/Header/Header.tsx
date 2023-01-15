@@ -45,7 +45,7 @@ export const Header = () => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-pink-600 text-white' : 'text-gray-500'
+                      active ? 'bg-blue-600 text-white' : 'text-gray-500'
                     } group flex rounded-md items-center w-full px-2 py-2 text-sm space-x-2`}
                     onClick={onOpen}
                   >
@@ -60,7 +60,7 @@ export const Header = () => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-pink-600 text-white' : 'text-gray-500'
+                      active ? 'bg-blue-600 text-white' : 'text-gray-500'
                     } group flex rounded-md items-center w-full px-2 py-2 text-sm space-x-2`}
                     onClick={logout}
                     data-testid="logout-button"
