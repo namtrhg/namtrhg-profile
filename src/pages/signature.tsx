@@ -82,28 +82,28 @@ const SignaturePage = () => {
             <div>
               <Label>Facebook</Label>
               <Input
-                value={website}
+                value={facebook}
                 onChange={(e) => setFacebook(e.target.value)}
               />
             </div>
             <div>
               <Label>Youtube</Label>
               <Input
-                value={website}
+                value={youtube}
                 onChange={(e) => setYoutube(e.target.value)}
               />
             </div>
             <div>
               <Label>Linkedin</Label>
               <Input
-                value={website}
+                value={linkedin}
                 onChange={(e) => setLinkedin(e.target.value)}
               />
             </div>
             <div>
               <Label>Twitter</Label>
               <Input
-                value={website}
+                value={twitter}
                 onChange={(e) => setTwitter(e.target.value)}
               />
             </div>
