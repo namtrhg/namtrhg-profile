@@ -48,7 +48,7 @@ const SignaturePage = () => {
             <div>
               <Label>Họ và tên (Tiếng Anh)</Label>
               <Input
-                value={name}
+                value={nameEng}
                 onChange={(e) => setNameEng(e.target.value)}
               />
             </div>
@@ -59,7 +59,7 @@ const SignaturePage = () => {
             <div className="w-full">
               <Label>Chức vụ (Tiếng Anh)</Label>
               <Input
-                value={title}
+                value={titleEng}
                 onChange={(e) => setTitleEng(e.target.value)}
               />
             </div>
