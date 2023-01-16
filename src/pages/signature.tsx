@@ -127,7 +127,7 @@ const SignaturePage = () => {
                   >
                     <tbody>
                       <tr>
-                        <td style={{ width: '40px' }}>
+                        <td style={{ width: '60px' }}>
                           <a
                             href="https://newatlantic.vn/"
                             title="Newatlantic"
@@ -136,7 +136,7 @@ const SignaturePage = () => {
                             style={{
                               textDecoration: 'none',
                               display: 'block',
-                              width: '40px',
+                              width: '60px',
                               fontSize: '0px',
                               lineHeight: '1em',
                             }}
@@ -357,7 +357,7 @@ const SignaturePage = () => {
                   >
                     <tbody>
                       <tr>
-                        <td style={{ textAlign: 'right', width: '40px' }}>
+                        <td style={{ width: '60px' }}>
                           <a
                             href="https://newatlantic.vn/"
                             title="Newatlantic"
@@ -366,13 +366,16 @@ const SignaturePage = () => {
                             style={{
                               textDecoration: 'none',
                               display: 'block',
-                              width: '40px',
+                              width: '60px',
                               fontSize: '0px',
                               lineHeight: '1em',
                             }}
                           >
                             <img
-                              className="bg-white"
+                              style={{
+                                background: 'white',
+                                marginRight: '20px',
+                              }}
                               src="https://www.tranhoangnam.dev/img/logo.png"
                               alt="logo"
                               width={60}
