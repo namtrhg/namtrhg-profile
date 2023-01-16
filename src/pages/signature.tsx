@@ -148,8 +148,8 @@ const SignaturePage = () => {
                               }}
                               src="https://www.tranhoangnam.dev/img/logo.png"
                               alt="logo"
-                              width={48}
-                              height={48}
+                              width={60}
+                              height={60}
                             />
                           </a>
                         </td>
@@ -375,8 +375,8 @@ const SignaturePage = () => {
                               className="bg-white"
                               src="https://www.tranhoangnam.dev/img/logo.png"
                               alt="logo"
-                              width={48}
-                              height={48}
+                              width={60}
+                              height={60}
                             />
                           </a>
                         </td>
