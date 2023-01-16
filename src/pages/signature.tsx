@@ -172,7 +172,7 @@ const SignaturePage = () => {
                               color: 'rgb(25, 27, 57)',
                               fontSize: '11px',
                               fontWeight: 'bold',
-                              margin: '0px',
+                              margin: '3px 3px 0px',
                               lineHeight: '14px',
                             }}
                           >
@@ -402,7 +402,7 @@ const SignaturePage = () => {
                               color: 'rgb(25, 27, 57)',
                               fontSize: '11px',
                               fontWeight: 'bold',
-                              margin: '0px',
+                              margin: '3px 3px 0px',
                               lineHeight: '14px',
                             }}
                           >
