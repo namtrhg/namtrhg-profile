@@ -192,6 +192,27 @@ const SignaturePage = () => {
                     whiteSpace: 'nowrap',
                   }}
                 >
+                  <h6
+                    style={{
+                      color: '#1E40AF',
+                      fontSize: '11px',
+                      fontWeight: 'bold',
+                      lineHeight: '14px',
+                      margin: '14px 0px 0px 3px',
+                    }}
+                  >
+                    CÔNG TY CỔ PHẦN TMQT TÂN ĐẠI TÂY DƯƠNG
+                  </h6>
+                </td>
+              </tr>
+              <tr style={{ margin: '0px', padding: '0px' }}>
+                <td
+                  style={{
+                    margin: '0px',
+                    padding: '0px',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
                   <p
                     style={{
                       color: 'rgb(103, 105, 131)',
@@ -412,6 +433,27 @@ const SignaturePage = () => {
                       </tr>
                     </tbody>
                   </table>
+                </td>
+              </tr>
+              <tr style={{ margin: '0px', padding: '0px' }}>
+                <td
+                  style={{
+                    margin: '0px',
+                    padding: '0px',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  <h6
+                    style={{
+                      color: '#1E40AF',
+                      fontSize: '11px',
+                      fontWeight: 'bold',
+                      lineHeight: '14px',
+                      margin: '14px 0px 0px 3px',
+                    }}
+                  >
+                    NEW ATLANTIC INTERNATIONAL TRADING JOINT STOCK COMPANY
+                  </h6>
                 </td>
               </tr>
               <tr style={{ margin: '0px', padding: '0px' }}>
