@@ -242,6 +242,16 @@ const SignaturePage = () => {
                       }}
                     >
                       https://newatlantic.vn
+                    </a>{' '}
+                    | <b style={{ color: '#1E40AF' }}>E: </b>
+                    <a
+                      href="mailto:contact@newatlantic.vn"
+                      style={{
+                        textDecoration: 'none',
+                        color: 'rgb(103, 103, 131)',
+                      }}
+                    >
+                      contact@newatlantic.vn
                     </a>
                   </p>
                   <p
@@ -493,6 +503,16 @@ const SignaturePage = () => {
                       }}
                     >
                       https://newatlantic.vn
+                    </a>{' '}
+                    | <b style={{ color: '#1E40AF' }}>E: </b>
+                    <a
+                      href="mailto:contact@newatlantic.vn"
+                      style={{
+                        textDecoration: 'none',
+                        color: 'rgb(103, 103, 131)',
+                      }}
+                    >
+                      contact@newatlantic.vn
                     </a>
                   </p>
                   <p
@@ -596,12 +616,12 @@ const SignaturePage = () => {
         </div>
       </div>
       <Button
-        className="mx-auto"
+        className="mt-10"
         appearance="default"
         loading={success}
         onClick={copyToClipboard}
       >
-        Copy
+        Copy chữ ký
       </Button>
     </div>
   )
