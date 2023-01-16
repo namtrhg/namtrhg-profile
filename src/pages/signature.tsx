@@ -121,40 +121,13 @@ const SignaturePage = () => {
                     style={{
                       width: '100%',
                       borderSpacing: '0px',
-                      borderLeft: '3px solid #1E40AF',
                       padding: '7px 7px 7px 15px',
                       boxSizing: 'border-box',
                     }}
                   >
                     <tbody>
                       <tr>
-                        <td
-                          style={{ paddingRight: '20px', whiteSpace: 'nowrap' }}
-                        >
-                          <h4
-                            style={{
-                              color: '#1E40AF',
-                              fontWeight: 'bold',
-                              fontSize: '15px',
-                              margin: '0px 0px 3px',
-                              lineHeight: '15px',
-                            }}
-                          >
-                            &nbsp;{name}
-                          </h4>
-                          <h6
-                            style={{
-                              color: 'rgb(25, 27, 57)',
-                              fontSize: '11px',
-                              fontWeight: 'bold',
-                              margin: '0px',
-                              lineHeight: '14px',
-                            }}
-                          >
-                            &nbsp;{title}
-                          </h6>
-                        </td>
-                        <td style={{ textAlign: 'right', width: '40px' }}>
+                        <td style={{ width: '40px' }}>
                           <a
                             href="https://newatlantic.vn/"
                             title="Newatlantic"
@@ -169,13 +142,42 @@ const SignaturePage = () => {
                             }}
                           >
                             <img
-                              className="bg-white"
+                              style={{
+                                background: 'white',
+                                marginRight: '20px',
+                              }}
                               src="https://www.tranhoangnam.dev/img/logo.png"
                               alt="logo"
                               width={48}
                               height={48}
                             />
                           </a>
+                        </td>
+                        <td
+                          style={{ paddingRight: '20px', whiteSpace: 'nowrap' }}
+                        >
+                          <h4
+                            style={{
+                              color: '#1E40AF',
+                              fontWeight: 'bold',
+                              fontSize: '15px',
+                              margin: '0px 0px 3px',
+                              lineHeight: '15px',
+                            }}
+                          >
+                            &nbsp;&nbsp;{name}
+                          </h4>
+                          <h6
+                            style={{
+                              color: 'rgb(25, 27, 57)',
+                              fontSize: '11px',
+                              fontWeight: 'bold',
+                              margin: '0px',
+                              lineHeight: '14px',
+                            }}
+                          >
+                            &nbsp;&nbsp;{title}
+                          </h6>
                         </td>
                       </tr>
                     </tbody>
@@ -349,39 +351,12 @@ const SignaturePage = () => {
                     style={{
                       width: '100%',
                       borderSpacing: '0px',
-                      borderLeft: '3px solid #1E40AF',
                       padding: '7px 7px 7px 15px',
                       boxSizing: 'border-box',
                     }}
                   >
                     <tbody>
                       <tr>
-                        <td
-                          style={{ paddingRight: '20px', whiteSpace: 'nowrap' }}
-                        >
-                          <h4
-                            style={{
-                              color: '#1E40AF',
-                              fontWeight: 'bold',
-                              fontSize: '15px',
-                              margin: '0px 0px 3px',
-                              lineHeight: '15px',
-                            }}
-                          >
-                            &nbsp;{nameEng}
-                          </h4>
-                          <h6
-                            style={{
-                              color: 'rgb(25, 27, 57)',
-                              fontSize: '11px',
-                              fontWeight: 'bold',
-                              margin: '0px',
-                              lineHeight: '14px',
-                            }}
-                          >
-                            &nbsp;{titleEng}
-                          </h6>
-                        </td>
                         <td style={{ textAlign: 'right', width: '40px' }}>
                           <a
                             href="https://newatlantic.vn/"
@@ -404,6 +379,32 @@ const SignaturePage = () => {
                               height={48}
                             />
                           </a>
+                        </td>
+                        <td
+                          style={{ paddingRight: '20px', whiteSpace: 'nowrap' }}
+                        >
+                          <h4
+                            style={{
+                              color: '#1E40AF',
+                              fontWeight: 'bold',
+                              fontSize: '15px',
+                              margin: '0px 0px 3px',
+                              lineHeight: '15px',
+                            }}
+                          >
+                            &nbsp;&nbsp;{nameEng}
+                          </h4>
+                          <h6
+                            style={{
+                              color: 'rgb(25, 27, 57)',
+                              fontSize: '11px',
+                              fontWeight: 'bold',
+                              margin: '0px',
+                              lineHeight: '14px',
+                            }}
+                          >
+                            &nbsp;&nbsp;{titleEng}
+                          </h6>
                         </td>
                       </tr>
                     </tbody>
