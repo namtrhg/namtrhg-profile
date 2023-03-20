@@ -159,6 +159,12 @@ export const MainPage = () => {
         value={darkMode}
         onChange={() => setDarkMode(!darkMode)}
       />
+      <a
+        className="underline text-emerald-600"
+        href="https://blog.tranhoangnam.dev"
+      >
+        Checkout my blog's posts!
+      </a>
       <p
         className={clsx(
           'text-sm font-semibold',
