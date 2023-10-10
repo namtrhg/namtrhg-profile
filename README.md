@@ -1,38 +1,68 @@
-# Dwarves NextJS Boilerplate
+# vue-project
 
-An opinionated production-ready frontend boilerplate built on top of NextJS,
-shipped with TypeScript, SWR, TailwindCSS, Jest, testing-library, Cypress, and
-Storybook.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Quick Start
+## Recommended IDE Setup
 
-```bash
-git clone --depth=1 git@github.com:dwarvesf/nextjs-boilerplate.git my-project-name
-cd my-project-name
-yarn install
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-Then, you can run locally in development mode with live reload:
+### Compile and Hot-Reload for Development
 
-```bash
-yarn dev
+```sh
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your favorite browser
-to see your project.
+### Type-Check, Compile and Minify for Production
 
-## Deployment
+```sh
+npm run build
+```
 
-| Name        | Link                                                 |
-| ----------- | ---------------------------------------------------- |
-| Boilerplate | https://df-nextjs-boilerplate.netlify.app/           |
-| UI Docs     | https://df-nextjs-boilerplate-storybook.netlify.app/ |
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-## Documentation
+```sh
+npm run test:unit
+```
 
-- [Getting started](./docs/GETTING_STARTED.md)
-- [Tech ecosystem](./docs/TECH_ECOSYSTEM.md)
-- [Code style](./docs/CODE_STYLE.md)
-- [Writing tests](./docs/WRITING_TEST.md)
-- [Editor](./docs/EDITOR.md)
-- [Deployment](./docs/DEPLOYMENT.md)
+### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+
+```sh
+npm run test:e2e:dev
+```
+
+This runs the end-to-end tests against the Vite development server.
+It is much faster than the production build.
+
+But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+
+```sh
+npm run build
+npm run test:e2e
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
