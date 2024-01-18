@@ -22,7 +22,7 @@
         </div>
       </div>
       <figure class="lg:w-[421px] mt-10 lg:mt-0">
-        <img src="/images/profile.png" alt="profile" />
+        <img src="/images/profile.png" alt="Tran Hoang Nam" title="Tran Hoang Nam" />
       </figure>
     </div>
     <div class="flex space-x-16 mt-12 lg:mt-32">
