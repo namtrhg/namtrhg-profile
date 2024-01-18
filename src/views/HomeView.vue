@@ -4,17 +4,26 @@ import ProjectCard from '../components/ProjectCard/ProjectCard.vue'
 import { formatTimeWithDate } from '../utils/time'
 
 const projectList = [
-  {
+{
     id: 1,
+    name: 'Lexus Safety',
+    description:
+      'A landing page for Lexus Japan featuring all safety measure of each car model.',
+    techStack: 'JavaScript | HTML | CSS',
+    projectUrl: 'https://lexus.jp/safety/',
+    imgUrl: '/images/lexus.png'
+  },
+  {
+    id: 2,
     name: 'Suntory Wellness Club',
     description:
       'An online and mail-order service of SUNTORY that suggests products and services to individuals and provides products suited to their personal needs.',
-    techStack: 'JavaScript | Babel | SCSS',
+    techStack: 'JavaScript | HTML |Babel | SCSS',
     projectUrl: 'https://www.suntory-kenko.com/suntory-wellness-club/',
     imgUrl: '/images/swc.png'
   },
   {
-    id: 2,
+    id: 3,
     name: 'FieldFlex',
     description:
       'The FieldFLEX ecosystem, not only includes powerful mobile apps for Maximo and TRIRIGA, but several other key technologies that are crucial to your success: FieldFLEX FXV Platform, Mobile Software Development Kit (SDK), and the FieldFLEX Vendor Platform.  Together, these provide an enterprise-ready mobile system that works for any organization.',
@@ -23,7 +32,7 @@ const projectList = [
     imgUrl: '/images/ffx.png'
   },
   {
-    id: 3,
+    id: 4,
     name: 'MStation',
     description:
       'The MStation is the first BSCS Metaverse blockchain game on Binance Smart Chain (BSC). Players can summon characters, complete daily mining missions, protect the MStation, loot rare items to play and earn.',
