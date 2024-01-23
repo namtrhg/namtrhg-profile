@@ -65,9 +65,10 @@ onBeforeUnmount(() => {
 <template>
   <div class="home">
     <div class="flex flex-col lg:flex-row justify-between lg:h-[283px] mb-12 lg:mb-28">
-      <div class="flex flex-row lg:flex-col lg:justify-between items-center lg:items-start space-x-10 lg:space-x-0">
+      <div class="flex flex-row lg:flex-col lg:justify-between items-center lg:items-start space-y-10 space-x-10 lg:space-x-0">
         <h2 class="text-3xl lg:text-6xl font-medium text-primary">Hello, I’m <br />Nam Tran.</h2>
-        <img class="h-6 lg:h-[38px]" src="../assets/icons/ic-arrow.svg" alt="ic-arrow-svg" />
+        <img class="h-24" src="/images/miso.jpg" alt="My dog Miso" />
+        <img class="h-6 lg:h-[38px] animate-bounce" src="../assets/icons/ic-arrow.svg" alt="ic-arrow-svg" />
       </div>
       <div>
         <p class="text-2xl font-normal leading-[58.32px] text-secondary lg:w-[580px] text-justify">
