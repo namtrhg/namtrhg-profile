@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard/ProjectCard.vue'
 import { formatTimeWithDate } from '../utils/time'
 
 const projectList = [
-{
+  {
     id: 1,
     name: 'Lexus Safety',
     description:
@@ -65,10 +65,10 @@ onBeforeUnmount(() => {
 <template>
   <div class="home">
     <div class="flex flex-col lg:flex-row justify-between lg:h-[283px] mb-12 lg:mb-28">
-      <div class="flex flex-row lg:flex-col lg:justify-between items-center lg:items-start space-y-10 space-x-10 lg:space-x-0">
+      <div
+        class="flex flex-row lg:flex-col lg:justify-between items-center lg:items-start space-y-10 space-x-10 lg:space-x-0">
         <h2 class="text-3xl lg:text-6xl font-medium text-primary">Hello, I’m <br />Nam Tran.</h2>
         <img class="h-24" src="/images/miso.jpg" alt="My dog Miso" />
-        <img class="h-6 lg:h-[38px] animate-bounce" src="../assets/icons/ic-arrow.svg" alt="ic-arrow-svg" />
       </div>
       <div>
         <p class="text-2xl font-normal leading-[58.32px] text-secondary lg:w-[580px] text-justify">
@@ -81,6 +81,17 @@ onBeforeUnmount(() => {
         </p>
       </div>
     </div>
+    <div class="macbook-bg h-[42rem] bg-no-repeat bg-center bg-cover justify-center items-center mb-10 hidden lg:flex">
+      <video class="w-[84%] pl-2 pb-5" autoplay loop muted>
+        <source src="/images/desktop.mp4">
+      </video>
+    </div>
     <ProjectCard v-for="(item, index) in projectList" :key="item.id" :index="index" v-bind="item" />
   </div>
 </template>
+
+<style lang="css">
+.macbook-bg {
+  background-image: url("/images/macbook-frame.png");
+}
+</style>
