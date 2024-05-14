@@ -50,7 +50,8 @@
     <p class="lg:text-[32px] leading-9 tracking-tighter lg:hidden">I am thrilled to answer to your next project</p>
     <div>
       <a href="mailto:namtrhg@gmail.com" class="lg:text-[32px] leading-9 tracking-tighter">namtrhg@gmail.com</a>
-      <p class="mt-6">View resume</p>
+      <p class="mt-6"><a href="https://drive.google.com/file/d/14RJ2a_AbXU8QpQgGso5_9NHSB2QQlNhm/view?usp=sharing">View
+          resume</a></p>
     </div>
   </div>
 </template>
